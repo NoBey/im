@@ -1,0 +1,228 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "微软雅黑";
+}
+html {
+    //  overflow:hidden;
+}
+body {
+    background: url(../img/bg.jpg);
+    background-size: 100%; //  filter:url("blur.svg#blur");
+    //  filter:blur(100px);
+    //  overflow:hidden;
+}
+#login {
+    width: 500px;
+    background: white;
+    margin: 0 auto;
+    height: 400px;
+    margin-top: 10%;
+    opacity: 0.8;
+    box-shadow: 10px 10px 3px #006633;
+    h3 {
+        background-color: #00CC66;
+        color: white;
+        text-align: center;
+        width: 100%;
+        height: 30%;
+        display: block;
+        background-repeat: no-repeat;
+        background-size: 20%;
+        background-position-x: 52%;
+        background-position-y: 10px;
+        background-image: url("../img/tabbar-im.png");
+    };
+    input {
+        width: 80%;
+        height: 40px;
+        margin-top: 20px;
+        margin-left: 10%;
+    };
+    input[type='text'],
+    input[type='password'] {
+        text-indent: 10px;
+        background: #eee;
+        border: 1px solid #ccc;
+    };
+    input[type='text'] {}
+    input[type='password'] {};
+    input[type='button'] {
+        border: 0;
+        color: white;
+        font-size: 18px;
+    };
+    #register_btn {
+        background: #0099FF;
+        &:hover {
+            background: #006699;
+        }
+    };
+    #login_btn {
+        background: #00CC66;
+        opacity: 1;
+        &:hover {
+            opacity: 0.6;
+        }
+    };
+}
+#im_main {
+    margin: 0 auto;
+    width: 70%;
+    height: 500px;
+    background: white;
+    margin-top: 40px;
+    opacity: 0.8;
+    box-shadow: 0 0 30px #eee;
+    border-radius: 5px;
+    overflow: hidden;
+    #user_list {
+        float: left;
+        width: 30%;
+        margin: 0;
+        padding: 0; //      background: red;
+        height: 100%;
+        border-right: 1px #aaa solid;
+        #user_info {
+            width: 100%;
+            height: 26%;
+            background: #f6f6f6;
+            border-bottom: 1px solid #aaa;
+            #user_img {
+                height: 80px;
+                width: 80px; 
+                border-radius: 50%;
+                float: left;
+                margin: 25px 0 0 10px;
+                box-shadow: 0 0 10px;
+            };
+            h4 {
+                text-align: center;
+                height: 30%;
+                color: black;
+                float: right;
+                line-height: 130px;
+                margin-right: 20px;
+            }
+        };
+        #user_online {
+            width: 100%;
+            height: 100%;
+            overflow-y: auto;
+            overflow-x: hidden;
+            li {
+                width: 100%;
+                height: 50px;
+                margin: 3px 0;
+                background: #eee;
+                background-image: url("../img/IMG_1579.jpg");
+                background-repeat: no-repeat;
+                background-size: 50px;
+                text-indent: 60px;
+                line-height: 50px;
+                font-size: 25px;
+                font-weight: 400;
+                line-height: 50px;
+                &:hover{
+                   background: #D3D4D3;
+                  background-image: url("../img/IMG_1579.jpg");
+                  background-repeat: no-repeat;
+                  background-size: 50px;
+                   
+                }
+            }
+        }
+    };
+    #nav_set {
+        float: right;
+        height: 10%;
+        width: 69%; //     background: goldenrod;
+        
+        .nav_name{
+                line-height: 50px;
+    text-align: center;
+        }
+    };
+    #chat_box {
+        float: right;
+        height: 60%;
+        width: 69%;
+//      border: 1px #aaa solid;
+        background: white;
+        overflow-y: auto;
+        overflow-x: hidden;
+        .l_msg {
+            width: 100%;
+            height: auto;
+            float: left;
+            margin: 10px 0;
+            a {
+                color: black;
+                float: left;
+                text-decoration: none;
+            }
+            a:after {
+                content: " : ";
+            }
+            p {
+                padding-right: 10px;
+                width: 40%;
+                height: auto;
+                text-align: left;
+                margin-left: 10px;
+                float: left;
+                word-break: break-all;
+                padding-left: 10px;
+                background: #8899FF;
+                color: white;
+                line-height: 30px;
+                border-radius: 5px; //             text-indent: 20px;
+            }
+        };
+        .r_msg {
+            width: 100%;
+            height: auto;
+            float: left;
+            margin: 10px 0;
+            a {
+                color: black;
+                float: right;
+                text-decoration: none;
+                margin-right: 5px;
+            }
+            a:before {
+                content: " : ";
+            }
+            p {
+                margin-right: 10px;
+                width: 40%;
+                height: auto;
+                text-align: right;
+                float: right;
+                word-break: break-all; //              padding-left: 10px;
+                background: #8899FF;
+                color: white;
+                line-height: 30px;
+                border-radius: 5px; //             text-indent: 20px;
+            }
+        }
+    };
+    #send_box {
+        float: right;
+        height: 30%;
+        width: 69%; //     background: skyblue;
+        textarea {
+                width: 98%;
+    height: 85%;
+            border: 1px solid #aaa;
+            line-height: 20px;
+            font-size: 16px;
+                float: left;
+    border-radius: 5px;
+    z-index: 1;
+        };
+        #send_msg {
+            width: 100%;
+        }
+    };
+}

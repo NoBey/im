@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+	</head>
+
+	<body >
+		<!-- 登陆模块 -->
+		<div id="login" >
+			<h3></h3>
+			<input type="text" name="" id="user" value="" placeholder="请输入账户" />
+			<input type="password" name="" id="password" value="" placeholder="请输入密码" />
+			<input type="button" name="" id="login_btn" value="登陆" />
+			<input type="button" name="" id="register_btn" value="注册" />
+		</div>
+		<!-- 登陆模块 -->
+		
+		<!-- im主题结构  -->
+		
+		<div id="im_main" style="display: none;">
+			<!-- im列表和个人信息模块 -->
+			<div id="user_list">
+				<div id="user_info">
+					<!--<div id="" style="height: 60%;width: 100%;">-->
+						<img id='user_img' src="img/IMG_1579.jpg"/>
+			<!--		</div>		-->
+					<h4>NoBey</h4>
+				</div>
+				<ul id='user_online'>
+
+					
+				</ul>
+			</div>
+			<!-- im列表和个人信息模块 -->
+			
+			<!-- 顶部设置 -->
+			<div id="nav_set">
+				<h2 class="nav_name">NoBey</h2>
+			</div>
+			<!-- 顶部设置 -->
+			
+			<!-- 聊天框模块 -->
+			
+			<div id="chat_box">
+				<div class="l_msg">
+					<a href="">NoBey</a>
+					<p>欢迎使用NoBey的在线聊天系统</p>
+				</div>
+				<!--<div class="l_msg">
+					<a href="">NoBey</a>
+					<p>sdjkfkjsdhfjkssdasdada278637887dhfjsdhfjdsfhkjsdh</p>
+				</div>-->
+		
+			</div>
+			<div id="send_box">
+				<textarea name="" id="send_text" cols="30" rows="10"></textarea>
+				<input type="button" id="send_msg" value="发送" />
+			</div>
+			<!-- 聊天框模块 -->
+			
+		</div>
+		<!--  im主题结构  -->
+		
+		
+		
+		
+		<script type="text/javascript" src="js/jquery-1.11.1.js"></script>
+		<script src="js/layer/layer.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="js/socket.io-1.2.0.js"></script>
+		<script src="js/vue.js" type="text/javascript" charset="utf-8"></script>
+		<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/vue-router/0.7.10/vue-router.min.js" type="text/javascript" charset="utf-8"></script>-->
+		<script type="text/javascript" src="js/main.js" ></script>
+	</body>
+
+</html>

@@ -1,0 +1,218 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "微软雅黑";
+}
+body {
+  background: url(../img/bg.jpg);
+  background-size: 100%;
+}
+#login {
+  width: 500px;
+  background: white;
+  margin: 0 auto;
+  height: 400px;
+  margin-top: 10%;
+  opacity: 0.8;
+  box-shadow: 10px 10px 3px #006633;
+}
+#login h3 {
+  background-color: #00CC66;
+  color: white;
+  text-align: center;
+  width: 100%;
+  height: 30%;
+  display: block;
+  background-repeat: no-repeat;
+  background-size: 20%;
+  background-position-x: 52%;
+  background-position-y: 10px;
+  background-image: url("../img/tabbar-im.png");
+}
+#login input {
+  width: 80%;
+  height: 40px;
+  margin-top: 20px;
+  margin-left: 10%;
+}
+#login input[type='text'],
+#login input[type='password'] {
+  text-indent: 10px;
+  background: #eee;
+  border: 1px solid #ccc;
+}
+#login input[type='button'] {
+  border: 0;
+  color: white;
+  font-size: 18px;
+}
+#login #register_btn {
+  background: #0099FF;
+}
+#login #register_btn:hover {
+  background: #006699;
+}
+#login #login_btn {
+  background: #00CC66;
+  opacity: 1;
+}
+#login #login_btn:hover {
+  opacity: 0.6;
+}
+#im_main {
+  margin: 0 auto;
+  width: 70%;
+  height: 500px;
+  background: white;
+  margin-top: 40px;
+  opacity: 0.8;
+  box-shadow: 0 0 30px #eee;
+  border-radius: 5px;
+  overflow: hidden;
+}
+#im_main #user_list {
+  float: left;
+  width: 30%;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  border-right: 1px #aaa solid;
+}
+#im_main #user_list #user_info {
+  width: 100%;
+  height: 26%;
+  background: #f6f6f6;
+  border-bottom: 1px solid #aaa;
+}
+#im_main #user_list #user_info #user_img {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  float: left;
+  margin: 25px 0 0 10px;
+  box-shadow: 0 0 10px;
+}
+#im_main #user_list #user_info h4 {
+  text-align: center;
+  height: 30%;
+  color: black;
+  float: right;
+  line-height: 130px;
+  margin-right: 20px;
+}
+#im_main #user_list #user_online {
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+#im_main #user_list #user_online li {
+  width: 100%;
+  height: 50px;
+  margin: 3px 0;
+  background: #eee;
+  background-image: url("../img/IMG_1579.jpg");
+  background-repeat: no-repeat;
+  background-size: 50px;
+  text-indent: 60px;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 50px;
+}
+#im_main #user_list #user_online li:hover {
+  background: #D3D4D3;
+  background-image: url("../img/IMG_1579.jpg");
+  background-repeat: no-repeat;
+  background-size: 50px;
+}
+#im_main #nav_set {
+  float: right;
+  height: 10%;
+  width: 69%;
+}
+#im_main #nav_set .nav_name {
+  line-height: 50px;
+  text-align: center;
+}
+#im_main #chat_box {
+  float: right;
+  height: 60%;
+  width: 69%;
+  background: white;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+#im_main #chat_box .l_msg {
+  width: 100%;
+  height: auto;
+  float: left;
+  margin: 10px 0;
+}
+#im_main #chat_box .l_msg a {
+  color: black;
+  float: left;
+  text-decoration: none;
+}
+#im_main #chat_box .l_msg a:after {
+  content: " : ";
+}
+#im_main #chat_box .l_msg p {
+  padding-right: 10px;
+  width: 40%;
+  height: auto;
+  text-align: left;
+  margin-left: 10px;
+  float: left;
+  word-break: break-all;
+  padding-left: 10px;
+  background: #8899FF;
+  color: white;
+  line-height: 30px;
+  border-radius: 5px;
+}
+#im_main #chat_box .r_msg {
+  width: 100%;
+  height: auto;
+  float: left;
+  margin: 10px 0;
+}
+#im_main #chat_box .r_msg a {
+  color: black;
+  float: right;
+  text-decoration: none;
+  margin-right: 5px;
+}
+#im_main #chat_box .r_msg a:before {
+  content: " : ";
+}
+#im_main #chat_box .r_msg p {
+  margin-right: 10px;
+  width: 40%;
+  height: auto;
+  text-align: right;
+  float: right;
+  word-break: break-all;
+  background: #8899FF;
+  color: white;
+  line-height: 30px;
+  border-radius: 5px;
+}
+#im_main #send_box {
+  float: right;
+  height: 30%;
+  width: 69%;
+}
+#im_main #send_box textarea {
+  width: 98%;
+  height: 85%;
+  border: 1px solid #aaa;
+  line-height: 20px;
+  font-size: 16px;
+  float: left;
+  border-radius: 5px;
+  z-index: 1;
+}
+#im_main #send_box #send_msg {
+  width: 100%;
+}
+/*# sourceMappingURL=main.css.map */
