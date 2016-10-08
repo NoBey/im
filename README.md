@@ -1,6 +1,6 @@
 # 一个基于webSocket的即使聊天系统
 
-demo : im.nobey.cn
+url : im.nobey.cn
 
 
 2016-7-14 
